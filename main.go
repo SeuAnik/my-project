@@ -26,7 +26,7 @@ var productlist []Product
 func getProducts(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
-	w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Habib")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
 	if r.Method == "OPTIONS" {
 		w.WriteHeader(200)
